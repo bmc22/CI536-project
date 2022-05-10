@@ -558,6 +558,7 @@ i {
 #sort{
 	float: right;
 	margin: 3em 0 0 0 ;
+	border: solid red;
 }
 
 
