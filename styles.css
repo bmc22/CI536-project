@@ -6,7 +6,7 @@ img {
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-	background-color:#E1FDFF  ;
+	background-color:#EDFFFF  ;
 	margin-top: 1em;
 }
 
@@ -205,7 +205,7 @@ i {
 }
 
 
-#cat1, #cat2, #cat3, #cat4, #cat5, #cat6 {
+#books, #electronics, #stationery, #furniture, #food, #gardening {
 	 background-position: cover;
 	 background-size: 100% 100%; 
 	 border-radius: 1em;
@@ -219,7 +219,7 @@ i {
 	 cursor: pointer;
 }
 
-#cat1:hover, #cat2:hover, #cat3:hover, #cat4:hover, #cat5:hover:hover {
+#books:hover, #electronics:hover, #stationery:hover, #furniture:hover, #food:hover:hover {
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
@@ -229,33 +229,52 @@ i {
 	font-weight: bold;
 	color: #fff;
 	z-index: 10;
-	text-shadow: 2px 2px 2px rgba(0,0,0,0.85);
+	text-shadow: 0px 0px 17px #000;
 }
 
-#cat1{
-	background-image: url("images/random-image.jpg");
+#books{
+	background-image: url("images/books.jpg");
 }
 
-#cat2{
-	background-image: url("images/random-image.jpg");
+#electronics{
+	background-image: url("images/electronics.jpg");
 }
 
-#cat3{
-	background-image: url("images/random-image.jpg");
+#stationery{
+	background-image: url("images/stationery.jpg");
 }
 
-#cat4{
-	background-image: url("images/random-image.jpg");
+#furniture{
+	background-image: url("images/furniture.jpg");
 }
 
-#cat5{
-	background-image: url("images/random-image.jpg");
+#food{
+	background-image: url("images/food.jpg");
 }
 
-#cat6{
-	background-image: url("images/random-image.jpg");
+#gardening{
+	background-image: url("images/gardening.jpg");
 }
 
+.nav2 {
+	margin: 0;
+	width: 90%;
+	font-weight: bold;
+}
+
+.nav2 a {
+	text-decoration: none;
+	color: #18767D;
+}
+
+.nav2 a:hover {
+	text-decoration: none;
+	color: #18767D;
+}
+
+
+
+/****************************************** Media queries **********************************/
 
 @media screen and (min-width: 45em){
 	.clear1 {
@@ -310,7 +329,7 @@ i {
 	}
 	
 	
-	#cat1, #cat2, #cat3, #cat4, #cat5, #cat6 {
+	#books, #electronics, #stationery, #furniture, #food, #gardening {
 		margin: 2em;
 		width: 20%; 
 		height: 10em;
@@ -365,7 +384,7 @@ i {
 		width: 80%;
 	}
 	
-	#cat1, #cat2, #cat3, #cat4, #cat5, #cat6, #item {
+	#books, #electronics, #stationery, #furniture, #food, #gardening, #item {
 		width: 50%;
 	}
 	
@@ -375,10 +394,12 @@ i {
 /******************************************************************* Products page styles ***************************************************/
 
 .items {
-	 list-style: none;
+	position: absolute;
+	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
 	padding:0;
+	margin-top: 5em;
 	align-items: center;
 	justify-content:center;
 }
@@ -399,3 +420,170 @@ i {
 	font-size: 1.5em;
 	margin: .5em 0;
 }
+
+
+
+/*************************************************** Filters ******************************************************/
+#filters {
+  height: 70%;
+  margin-top: 9em;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #E5EFEF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: .4em;
+  font-size: 2.5em;
+  margin-left: 50px;
+  color: #000;
+  cursor: pointer;
+}
+
+.fa-filter{
+	 font-size: 1em;
+}
+
+#filter {
+	font-size: 2em;
+	margin: 1.5em 0 2em 2em;
+	position: absolute;
+	cursor: pointer;
+	float: left;
+}
+
+@media screen and (max-height: 450px) {
+  .filters {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#filter-form{
+	margin: 0 0 0 1em;
+}
+
+#apply-filters{
+	text-align: center;
+	margin: 2em .5em .5em .5em;
+}
+
+#apply-filters input {
+	background-color: #40EAE9;
+	color: #fff;
+	border: none;
+	font-size: 1.5em;
+	border-radius: .3em;
+	padding: .2em;
+}
+
+#apply-filters:hover input {
+	background-color: #18767D ;
+	color: #fff;
+}
+
+.filter{ 
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.filter .input {
+	margin: 0 1em .5em 0;
+}
+
+.filter-name{
+	font-weight: bold;
+	font-size: 1.5em;
+	margin: 0 0 .5em 0;
+}
+
+
+.fa-star {
+	font-size: 1.5em;
+	cursor: pointer;
+}
+
+.checked{
+	color: #DFD42E;
+}
+
+.unchecked{
+	color: #E8EAB4;
+}
+
+#stars {
+	display: none;
+}
+
+#price-range {
+	margin: 0 0 .5em 0;
+	background:  gray;
+	-webkit-appearance: none;
+	border-radius: 3em;
+	height: 7px;
+	width: 15em;
+}
+
+#price-range::-webkit-slider-thumb{
+	background: #000;
+	-webkit-appearance: none;
+	cursor: pointer;
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+}
+
+#min {
+	float:left;
+}
+
+
+#max {
+	float:right;
+}
+
+#min-max {
+	width: 12.5em;
+	margin-bottom: 3em;
+}
+
+
+#sort{
+	float: right;
+	margin: 3em 3em 0 0 ;
+}
+
+
+
+select {
+  
+  color: #000;
+  font-size: 1.5em;
+  background: #E8F2F4;
+  border: none;
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 2em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 3em;
+}
+
+
+select option{
+	color: #000;
+	font-size: 1em;
+	padding:1em;
+	background-color: none;
+	border: solid 2px #e29c9c;
+}
+
