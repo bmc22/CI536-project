@@ -274,121 +274,7 @@ i {
 
 
 
-/****************************************** Media queries **********************************/
 
-@media screen and (min-width: 45em){
-	.clear1 {
-		clear: none;
-	}
-	
-	.clear2 {
-		clear: both;
-	}
-	
-	i {
-		font-size: 2em;
-	}
-
-	
-	.sell a {
-		font-size: 1.5em;
-	}
-	
-	#cartCount {
-		font-size: .8em;
-	}
-	
-	.search-input {
-		font-size: 1.3em;
-		width: 13em;
-	}
-	
-	.search {
-		margin: 0 auto;
-	}
-	
-	.profile {
-		margin: 0 0 0 2em;
-	}
-	
-	.profile img {
-		width: 1.9em;
-		height: 1.9em;
-	}
-	
-	.basket {
-		margin: 0 0 0 2em;
-	}
-	
-	.nav ul {
-		margin: 0 2em 0 0;
-	}
-	
-	.logo a {
-		font-size: 2em;
-	}
-	
-	
-	#books, #electronics, #stationery, #furniture, #food, #gardening {
-		margin: 2em;
-		width: 20%; 
-		height: 10em;
-	}		
-	
-	h1 {
-		margin: 3em auto 2em auto;
-	}
-	
-	.account-menu {
-		top: 2.5em;
-	}
-	
-	 
-	.account-menu a {
-		padding: .3em .7em .3em .7em;
-	}
-	
-	.profile:hover .account-menu{
-	display: block;
-	}
-
-
-	.profile:hover .account-menu:before{
-	  border-width: 0 10px 10px 10px;
-	}
-	
-	ul #item {
-		margin: 4em;
-		text-align: center;
-		width: 30%;
-	}
-
-	ul #item img {
-		width: 100%;
-	}
-
-
-	#item #price, #description {
-		font-size: 2em;
-		margin: 3em 0;
-	}
-	
-}
-
-
-
-
-
-@media screen and (max-width: 25em){
-	.search-input { 
-		width: 80%;
-	}
-	
-	#books, #electronics, #stationery, #furniture, #food, #gardening, #item {
-		width: 50%;
-	}
-	
-}
 
 
 /******************************************************************* Products page styles ***************************************************/
@@ -450,12 +336,12 @@ i {
 }
 
 .fa-filter{
-	 font-size: 1em;
+	 font-size: .8em;
 }
 
 #filter {
-	font-size: 2em;
-	margin: 1.5em 0 2em 2em;
+	font-size: 1.5em;
+	margin: 1.5em 0 2em 0;
 	position: absolute;
 	cursor: pointer;
 	float: left;
@@ -557,16 +443,14 @@ i {
 
 #sort{
 	float: right;
-	margin: 3em 0 0 0 ;
-	border: solid red;
+	margin: 2em 0 0 0 ;
 }
 
 
 
 select {
-  
   color: #000;
-  font-size: 1.5em;
+  font-size: 1.3em;
   background: #E8F2F4;
   border: none;
   width: 100%;
@@ -588,3 +472,137 @@ select option{
 	border: solid 2px #e29c9c;
 }
 
+
+
+/****************************************** Media queries **********************************/
+
+@media screen and (min-width: 45em){
+	.clear1 {
+		clear: none;
+	}
+	
+	.clear2 {
+		clear: both;
+	}
+	
+	i {
+		font-size: 2em;
+	}
+
+	
+	.sell a {
+		font-size: 1.5em;
+	}
+	
+	#cartCount {
+		font-size: .8em;
+	}
+	
+	.search-input {
+		font-size: 1.3em;
+		width: 13em;
+	}
+	
+	.search {
+		margin: 0 auto;
+	}
+	
+	.profile {
+		margin: 0 0 0 2em;
+	}
+	
+	.profile img {
+		width: 1.9em;
+		height: 1.9em;
+	}
+	
+	.basket {
+		margin: 0 0 0 2em;
+	}
+	
+	.nav ul {
+		margin: 0 2em 0 0;
+	}
+	
+	.logo a {
+		font-size: 2em;
+	}
+	
+	
+	#books, #electronics, #stationery, #furniture, #food, #gardening {
+		margin: 2em;
+		width: 20%; 
+		height: 10em;
+	}		
+	
+	h1 {
+		margin: 3em auto 2em auto;
+	}
+	
+	.account-menu {
+		top: 2.5em;
+	}
+	
+	 
+	.account-menu a {
+		padding: .3em .7em .3em .7em;
+	}
+	
+	.profile:hover .account-menu{
+	display: block;
+	}
+
+
+	.profile:hover .account-menu:before{
+	  border-width: 0 10px 10px 10px;
+	}
+	
+	ul #item {
+		margin: 4em;
+		text-align: center;
+		width: 30%;
+	}
+
+	ul #item img {
+		width: 100%;
+	}
+
+
+	#item #price, #description {
+		font-size: 2em;
+		margin:1em 0;
+	}
+	
+	
+	#sort {
+		margin: 3em 5em 0 0;
+	}
+	
+	#filter {
+		margin: 1.5em 0 2em 2em;
+		font-size: 2em;
+	}
+	
+	.fa-filter{
+		font-size: 1em;
+	}
+	
+	select{
+		font-size: 1.5em;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 25em){
+	.search-input { 
+		width: 80%;
+	}
+	
+	#books, #electronics, #stationery, #furniture, #food, #gardening {
+		width: 50%;
+	}
+	
+}
