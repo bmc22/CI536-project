@@ -208,7 +208,7 @@ i {
 #books, #electronics, #stationery, #furniture, #food, #gardening {
 	 background-position: cover;
 	 background-size: 100% 100%; 
-	 border-radius: 1em;
+	 border-radius: .3em;
 	 margin: 1em;
 	 width: 35%; 
 	 height: 8em; 
