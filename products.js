@@ -34,9 +34,26 @@ window.addEventListener("load", function() {
 		})
 	}
 	
+	
+	//******************************** Adding a subcategory name nav2 when selecting a subcategory **********************************
+	
+	
+	
+	
+	//******************************** Selecting a subcategory **********************************
+	
+	document.querySelector("#item").addEventListener("click", function(){ 
+		window.open("product.html", "_self")
+	})
+	
+	
 })
 
+
+//hiding the filters on scroll
 
 window.addEventListener("scroll", function() {
 	document.querySelector("#filters").style.width = "0";
 })
+
+
