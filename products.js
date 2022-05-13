@@ -35,7 +35,7 @@ window.addEventListener("load", function() {
 	}
 	
 	
-	//******************************** Adding a subcategory name nav2 when selecting a subcategory **********************************
+	//******************************** Adding a subcategory name to nav2 when selecting a subcategory **********************************
 	
 	
 	
