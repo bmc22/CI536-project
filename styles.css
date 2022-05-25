@@ -395,7 +395,7 @@ i {
 	-webkit-appearance: none;
 	border-radius: 3em;
 	height: 7px;
-	width: 20em;
+	width: 18em;
 }
 
 #price-range::-webkit-slider-thumb{
