@@ -395,7 +395,7 @@ i {
 	-webkit-appearance: none;
 	border-radius: 3em;
 	height: 7px;
-	width: 15em;
+	width: 20em;
 }
 
 #price-range::-webkit-slider-thumb{
@@ -458,6 +458,7 @@ select option{
 .info {
 	font-size: 1.5em;
 	margin-top: 3em;
+	border: solid #EDFFFF;
 	color: red;
 }
 
@@ -743,6 +744,10 @@ input[type=submit]:hover{
 	.heading2 {
 		margin-top: 3.5em;
 	}
+	
+	#price-range {
+		width: 15em;
+	}
 }
 
 
@@ -756,10 +761,6 @@ input[type=submit]:hover{
 	
 	#books, #electronics, #stationery, #furniture, #food, #gardening {
 		width: 50%;
-	}
-	
-	#price-range {
-		width: 20em;
 	}
 	
 }
