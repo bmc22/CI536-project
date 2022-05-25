@@ -757,6 +757,10 @@ input[type=submit]:hover{
 		width: 50%;
 	}
 	
+	#price-range {
+		width: 20em;
+	}
+	
 }
 
 
