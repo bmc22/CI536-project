@@ -702,6 +702,8 @@ main{
 	border: .3px solid gray;
 	padding: .5em;
 	background: #fff;
+	width: 95%;
+	margin: auto;
 }
 
 .productImg {
