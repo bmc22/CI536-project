@@ -395,7 +395,7 @@ i {
 	-webkit-appearance: none;
 	border-radius: 3em;
 	height: 7px;
-	width: 18em;
+	width: 15em;
 }
 
 #price-range::-webkit-slider-thumb{
@@ -457,9 +457,10 @@ select option{
 
 .info {
 	font-size: 1.5em;
+	text-align: center;
 	margin-top: 3em;
-	border: solid #EDFFFF;
 }
+
 
 .product-name {
 	font-size: 2em;
@@ -467,12 +468,14 @@ select option{
 	margin-top: 1em;
 }
 
+
 .price {
 	float:left;
 	font-size: 2em;
 	margin-top: 0;
 	font-weight: bold;
 }
+
 
 #product {
 	padding: 0;
@@ -485,6 +488,7 @@ select option{
 #product img {
 	width: 100%;
 }
+
 
 .rate {
 	float: right;
@@ -599,7 +603,10 @@ input[type=number] {
 .review-text{
 	font-size: 1.5em;
 }
+
+
 /************************************** submit buttons ************************************/
+
 input[type=submit]{
 	background-color: #40EAE9;
 	color: #fff;
@@ -615,6 +622,70 @@ input[type=submit]:hover{
 	background-color: #18767D ;
 	color: #fff;
 }
+
+
+
+/************************************** basket page ************************************/
+
+#subtotal {
+	margin-top: 5em;
+}
+
+#subtotal p{
+	font-size: 2em;
+	float: left;
+	width: 60%;
+}
+
+
+#subtotal #checkout {
+	width: 30%;
+	float: right;
+	margin-top: 1em;
+	text-align: center;
+}
+
+#subtotal #checkout a {
+	background-color: #40EAE9;
+	color: #fff;
+	font-size: 1.5em;
+	border-radius: .3em;
+	padding: .2em;
+    text-align: center;
+	text-decoration: none;
+}
+
+
+#subtotal #checkout a:hover{
+	background-color: #18767D ;
+	color: #fff;
+}
+
+
+.product-in-basket {
+	margin-top: 4em;
+	text-align: center;
+}
+
+
+.product-in-basket img {
+	width: 8em;
+	height: 8em;
+	float : left;
+}
+
+
+.product-in-basket #thePrice {
+	font-weight: bold;
+}
+
+
+.product-in-basket .fa-circle-minus, .fa-circle-plus, #quantity, p {
+	font-size: 1em;
+}
+
+
+
 /****************************************** Media queries **********************************/
 
 @media screen and (min-width: 45em){
@@ -743,12 +814,73 @@ input[type=submit]:hover{
 	.heading2 {
 		margin-top: 3.5em;
 	}
-	
-	#price-range {
-		width: 15em;
-	}
+
 }
 
+
+
+@media screen and (min-width: 60em){
+	
+	.product-in-basket img{
+		width: 12em;
+		height: 12em;
+		margin-right: 2em;
+	}
+	
+	.products-in-basket {
+		width: 60%;
+		margin-left: 2em;
+	}
+	
+	.product-in-basket .fa-circle-minus, .fa-circle-plus, #quantity, p {
+		font-size: 1.5em;
+	}
+	
+	.product-in-basket {
+		margin-top: 7em;
+	}
+	
+	#subtotal {
+		padding: 1.5em 1em 1.5em 1em;
+		background: #fff;
+		width: 20%;
+		position: fixed;
+		top: 25%;
+		right: 5%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		font-size: 2em;
+		text-align: center;
+	} 
+	
+	
+	#subtotal p {
+		margin: 0;
+		font-size: 1.3em;
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
+	
+	
+	#subtotal #checkout {
+		width: 100%;
+		float: none;
+		margin-top: 1em;
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	#subtotal #checkout a{
+		font-size: 1em;
+	}
+	
+	
+	.product-in-basket {
+		text-align: left;
+		padding-left: 5%;
+	}
+}
 
 
 
@@ -760,6 +892,10 @@ input[type=submit]:hover{
 	
 	#books, #electronics, #stationery, #furniture, #food, #gardening {
 		width: 50%;
+	}
+	
+	#price-range {
+		width: 20em;
 	}
 	
 }
