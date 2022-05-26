@@ -663,15 +663,15 @@ input[type=submit]:hover{
 
 
 .product-in-basket {
-	margin-top: 4em;
-	text-align: center;
+	margin-top: 3em;
+	position: relative;
+	padding: .5em;
 }
 
 
 .product-in-basket img {
-	width: 8em;
-	height: 8em;
-	float : left;
+	width: 7em;
+	height: 7em;
 }
 
 
@@ -688,6 +688,35 @@ input[type=submit]:hover{
 main{
 	margin-bottom: 10em;
 }
+
+
+
+
+.theQTY {
+	float: right;
+	transform: translateY(140%);
+	margin-right: 1em;	
+}
+
+.productInfo {
+	border: .3px solid gray;
+	padding: .5em;
+	background: #fff;
+}
+
+.productImg {
+	margin: .6em 1em 0 .5em;
+	float : left;
+}
+
+.remove {
+	position: absolute;
+	color: red;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
 
 
 /****************************************** Media queries **********************************/
@@ -830,9 +859,8 @@ main{
 @media screen and (min-width: 60em){
 	
 	.product-in-basket img{
-		width: 12em;
-		height: 12em;
-		margin-right: 2em;
+		width: 8em;
+		height: 8em;
 	}
 	
 	.products-in-basket {
@@ -844,12 +872,9 @@ main{
 		font-size: 1.5em;
 	}
 	
-	.product-in-basket {
-		margin-top: 7em;
-	}
 	
 	#subtotal {
-		padding: 1.5em 1em 1.5em 1em;
+		padding: 1em .5em 1em .5em;
 		background: #fff;
 		width: 20%;
 		position: fixed;
@@ -864,7 +889,7 @@ main{
 	
 	#subtotal p {
 		margin: 0;
-		font-size: 1.3em;
+		font-size: 1em;
 		width: 100%;
 		float: none;
 		padding: 0;
@@ -887,6 +912,24 @@ main{
 	.product-in-basket {
 		text-align: left;
 		padding-left: 5%;
+		padding: .5em;
+		margin-top: 5em;
+	}
+	
+	.theQTY {
+		float: right;
+		transform: translateY(85%);
+		margin-right: 3em;
+	}
+	
+	.productInfo {
+		padding: .5em;
+		background: #fff;
+	}
+	
+	.productImg {
+		margin: .6em 3em 0 1em;
+	    float : left;
 	}
 }
 
