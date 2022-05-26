@@ -694,7 +694,7 @@ main{
 
 .theQTY {
 	float: right;
-	transform: translateY(110%);
+	transform: translateY(120%);
 	margin-right: 1em;	
 }
 
@@ -714,8 +714,8 @@ main{
 .remove {
 	position: absolute;
 	color: red;
-	top: 0;
-	right: 0;
+	top: 3;
+	right: 10;
 	cursor: pointer;
 }
 
