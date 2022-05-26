@@ -2,6 +2,12 @@
 
 window.addEventListener("load", function(){
 	
+	//******************************** opening the basket **********************************
+	
+	document.qerySelector(".basket").addEventListener("click", function(){
+		window.open("basket.html", "_self")
+	})
+	
 	document.querySelector(".fa-circle-plus").addEventListener("click", function(){
 		var quantity = document.querySelector("#quantity");
 		var n = quantity.getAttribute("value");
