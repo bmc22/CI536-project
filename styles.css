@@ -680,10 +680,14 @@ input[type=submit]:hover{
 }
 
 
-.product-in-basket .fa-circle-minus, .fa-circle-plus, #quantity, p {
+.product-in-basket #quantity, p {
 	font-size: 1em;
 }
 
+
+main{
+	margin-bottom: 10em;
+}
 
 
 /****************************************** Media queries **********************************/
@@ -761,7 +765,7 @@ input[type=submit]:hover{
 	}
 	
 	.profile:hover .account-menu{
-	display: block;
+		display: block;
 	}
 
 
@@ -814,6 +818,10 @@ input[type=submit]:hover{
 	.heading2 {
 		margin-top: 3.5em;
 	}
+	
+	.review-text{
+		font-size: 1em;
+	}
 
 }
 
@@ -832,7 +840,7 @@ input[type=submit]:hover{
 		margin-left: 2em;
 	}
 	
-	.product-in-basket .fa-circle-minus, .fa-circle-plus, #quantity, p {
+	.product-in-basket #quantity, p {
 		font-size: 1.5em;
 	}
 	
