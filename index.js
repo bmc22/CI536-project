@@ -1,6 +1,13 @@
 
 window.addEventListener("load", function(){
 	
+	
+	//******************************** opening the basket **********************************
+	document.querySelector(".basket").addEventListener("click", function(){
+		window.open("basket.html", "_self")
+	})
+	
+	
 	//********************** the books page *******************
 	document.querySelector("#books").addEventListener("click", function(){ 
 		window.open("books.html", "_self")
