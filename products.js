@@ -47,6 +47,12 @@ window.addEventListener("load", function() {
 	})
 	
 	
+	//******************************** opening the basket **********************************
+	
+	document.querySelector(".basket").addEventListener("click", function(){
+		window.open("basket.html", "_self")
+	})
+	
 })
 
 
