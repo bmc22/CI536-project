@@ -4,7 +4,7 @@ window.addEventListener("load", function(){
 	
 	//******************************** opening the basket **********************************
 	
-	document.qerySelector(".basket").addEventListener("click", function(){
+	document.querySelector(".basket").addEventListener("click", function(){
 		window.open("basket.html", "_self")
 	})
 	
