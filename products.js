@@ -2,7 +2,12 @@
 window.addEventListener("load", function() {
 
 	document.querySelector("#filter").addEventListener("click", function () {
-		document.querySelector("#filters").style.width = "250px";
+		if(window.innerWidth >= 800) {
+			document.querySelector("#filters").style.width = "30%";
+		}
+		else {
+			document.querySelector("#filters").style.width = "100%";
+		}
 	})
 
 	document.querySelector(".closebtn").addEventListener("click", function () {
@@ -35,10 +40,6 @@ window.addEventListener("load", function() {
 	}
 	
 	
-	//******************************** Adding a subcategory name nav2 when selecting a subcategory **********************************
-	
-	
-	
 	
 	//******************************** Selecting a subcategory **********************************
 	
@@ -59,7 +60,8 @@ window.addEventListener("load", function() {
 //hiding the filters on scroll
 
 window.addEventListener("scroll", function() {
-	document.querySelector("#filters").style.width = "0";
+	if(window.innerWidth >= 800)
+		document.querySelector("#filters").style.width = "0";
 })
 
 
