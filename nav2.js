@@ -3,12 +3,6 @@ var nav2;
 var index = 0;
 
 
-/*
-	<p class = "nav2"> 
-	 <span id = "nav2">  </span> &#8680; Accessories
-	</p>
-*/
-
 window.addEventListener("load", function() {
 	
 	var url = window.location.href.split("/");
@@ -18,7 +12,6 @@ window.addEventListener("load", function() {
 	if(page != "index.html"){
 		
 		let navPages = [...new Set(localStorage.getItem("previous_pages").split(" "))];
-		console.log(navPages);
 		
 		for(let i =0; i < navPages.length ; i++){
 			
