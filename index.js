@@ -1,4 +1,3 @@
-
 window.addEventListener("load", function(){
 	
 	
@@ -33,8 +32,8 @@ window.addEventListener("load", function(){
 	
 	
 	//********************** the food page *******************
-	document.querySelector("#food").addEventListener("click", function(){ 
-		window.open("food.html", "_self")
+	document.querySelector("#accessories").addEventListener("click", function(){ 
+		window.open("accessories.html", "_self")
 	})
 	
 	

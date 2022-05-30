@@ -1,12 +1,13 @@
-//*********************************** Setting the quantity of a product ********************************************/
-
 window.addEventListener("load", function(){
-	
-	//******************************** opening the basket **********************************
+
+   //******************************** opening the basket **********************************
 	
 	document.querySelector(".basket").addEventListener("click", function(){
 		window.open("basket.html", "_self")
 	})
+	
+	
+	//******************************** setting the quantity of a product **********************************
 	
 	document.querySelector(".fa-circle-plus").addEventListener("click", function(){
 		var quantity = document.querySelector("#quantity");
@@ -25,9 +26,10 @@ window.addEventListener("load", function(){
 	})
 	
 	
+	
 	//the recommended products slider
 	$(document).ready(function(){
       $('.slider').bxSlider();
     });
+	
 })
-

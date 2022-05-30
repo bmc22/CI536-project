@@ -12,15 +12,17 @@ window.addEventListener("load", function(){
 	
 	{   productNum = "product" + i.toString();
 		   
-	    console.log(productNum);
-	
-		document.querySelector('.' + productNum + ' .fa-square-minus').addEventListener("click", reduceQTY(productNum));
+	    document.querySelector('.' + productNum + ' .fa-square-minus').addEventListener("click", reduceQTY(productNum));
 		
 		
-		document.querySelector("." + productNum + " .fa-square-plus").addEventListener("click", addQTY(productNum))
+		document.querySelector('.' + productNum + ' .fa-square-plus').addEventListener("click", addQTY(productNum))
 	
+	
+		document.querySelector('.' + productNum + " .remove").addEventListener("click", remove(productNum));
 	
 	}
+	
+
 	
 })
 
@@ -45,7 +47,7 @@ const reduceQTY = (productNum) => {
 		}
 		
 		if(quantity.getAttribute("value") == 0) {
-			remove(productNum);
+			document.querySelector("." + productNum).style.display = "none";
 		}
     }
 }
@@ -72,8 +74,17 @@ const addQTY = (productNum) => {
 }
 
 
-function remove(productNum) {
+const remove = (productNum) => {
 	
-	console.log("success");
-	document.querySelector("." + productNum).style.display = "none";
+	return (e) => {
+	
+	    totalAmount = parseFloat(document.querySelector("#totalAmount").textContent);
+		
+		
+		document.querySelector("#totalAmount").textContent = (totalAmount - 
+			parseFloat(document.querySelector('.' + productNum + ' #thePrice').textContent.slice(9))).toFixed(2)
+			
+		document.querySelector("." + productNum).style.display = "none";
+	
+	}
 }

@@ -1,0 +1,373 @@
+<!DOCTYPE >
+
+<html lang="en"> 
+
+<head>
+<meta charset="utf-8"/>
+
+<meta name="viewport" content="width= device-width, initial-scale=1"/>
+
+<title> Sell your item </title>
+
+<script src="https://kit.fontawesome.com/8a181a8ab1.js" crossorigin="anonymous"></script>
+
+<link href="styles.css" rel="stylesheet"/>
+
+<script src="sell.js"></script>
+<script src= "nav2.js"> </script>
+ 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+</head>
+
+<body>
+
+
+<header> 
+
+<div class="nav">
+
+	<div class="logo">
+		<a href="index.html"> Home </a>
+	</div>
+	
+	
+	
+	
+	<div class="menu">
+		<ul>
+			<li class="sell">
+			<a href= ""> Sell </a>
+			</li>
+
+			<li class="basket">
+			<i class="fa-solid fa-basket-shopping"></i>
+			<span id='cartCount'> 2 </span>
+			</li>
+
+			<li class="profile">
+			<img src="images/profile.png" />
+			
+			<div class="account-menu">
+				<a href="">Account </a>
+				<a href=""> Orders  </a>
+				<a href=""> Inventory </a>
+				<a href=""> Sales </a>
+				<a href=""> Log out </a>
+			</div>
+			
+			</li>
+			
+		</ul>
+	</div>
+	
+	
+	<div class="clear1"> </div>
+	
+	<div class="search">
+
+		<input type="text" class="search-input" placeholder= "search an item" > 
+		
+		<button type="submit" class="search-button">
+		<i class="fa-solid fa-magnifying-glass"></i>
+		</button>
+	</div>
+	
+	<div class="clear2"> </div>
+	
+	
+</div>
+
+</header>
+
+
+<main>
+
+<p class = "nav2"> 
+	 <span id = "nav2">  </span> Sell
+</p>
+
+
+
+
+<form id="uploadForm" action="/action_page.php">
+
+  <!-- bars which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:0;">
+    <span class="step"></span>
+    <span class="step"></span>
+	<span class="step" style= "margin-left: -0.12em;"></span>
+    <span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+  </div>
+  
+  
+
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab item_category">
+  
+	<h1 class="form-header">Your item's category</h1>
+
+
+	<div class="upload-item-cat">
+	
+		<label>
+			<input type="radio" name="category" value="books" style="position: absolute; opacity: 0; width: 0; height: 0;">
+			<div class="sell-books"> Books </div>	
+		</label>
+		
+
+		<label>
+			<input type="radio" name="category" value="electronics" style="position: absolute; opacity: 0; width: 0; height: 0;">
+			<div class="sell-electronics"> Electronics </div>
+		</label>
+		
+		
+		<label>
+			<input type="radio" name="category" value="stationery" style="position: absolute; opacity: 0; width: 0; height: 0;">
+			<div class="sell-stationery"> Stationery </div>
+		</label>
+ 
+	
+		<label>
+			<input type="radio" name="category" value="furniture" style="position: absolute; opacity: 0; width: 0; height: 0;">
+			<div class="sell-furniture"> Furniture </div>
+		</label>
+		
+		
+		<label>
+			<input type="radio" name="category" value="accessories" style="position: absolute; opacity: 0; width: 0; height: 0;">
+			<div class="sell-accessories"> Accessories </div> 
+		</label>
+
+		<label>
+		  <input type="radio" name="category" value="gardening" style="position: absolute; opacity: 0; width: 0; height: 0;">
+		  <div class="sell-gardening"> Gardening </div> 
+		</label>
+		
+	</div>
+		
+  </div>
+  
+  
+  <div class="tab">
+  
+		<!-- the elements will be added to the tab in JS -->
+     
+  </div>
+  
+  <div class="tab">
+  
+	 <h1 class="form-header">Item information (required)</h1>
+	 
+	 <div class="left">
+		
+		 <!--  	ITEM NAME -->
+		 <input type="text" id="item-name" name="item-name" placeholder= "Item's name" />
+		 
+		 
+		 <!--  	ITEM DESCRIPTION -->
+		 <input type="text" id="item-description" name="item-description" placeholder="Description ..." />
+		 
+		 <!--  	ITEM PRICE -->
+		 <input type="number" min="0.00" max="10000.00" step="0.01" id="item-price" name="item-price" placeholder="Price ..." />
+		 
+		 <!--  	ITEM CONDITION -->
+		 <select id="item-condition" name="condition">
+			<option value="" disabled selected hidden>Condition </option>
+			<option value="new">New</option>
+			<option value="used">Used</option>
+			<option value="acceptable">Acceptable</option>
+			<option value="good">Good</option>
+		</select>
+	 
+	 </div>
+	 
+	 <div class="right">
+	 
+		 <!--  	ITEM PHOTO -->
+
+		<div class="image-upload">
+		 
+		  <label for="file-upload-input" class="upload-btn">Click to upload your item's photo</label>
+		  <input id="file-upload-input" style="visibility:hidden;" type="file" />
+	
+	
+		  <img id="item-image" src="#">
+		  
+		  <button type="button" class="remove-image"> 
+			Remove <span class="image-title">Uploaded Image</span>
+		  </button>
+		  
+		</div>
+	 
+	
+	</div>
+
+	<div class="clear"> </div>
+	
+	
+  </div>
+  
+  
+  <div class="tab"> 
+  
+	<h1 class="form-header">Delivery method</h1>
+  
+    <div class="delivery-collection">
+		<input type="radio" name="delivery" id="delivery-option" value="delivery" />
+		<label style ="font-weight: bold" for="delivery-option" > Delivery </label>
+		
+		<!-- Delivery options -->
+		<div class="delivery-options">
+			<label>
+				<input type="radio" name="delivery-option" value="option-1" style="position: absolute; opacity: 0; width: 0; height: 0;">
+				<div class="delivery-info"> 
+					<i class="fa-solid fa-truck"></i>
+					
+					Royal Mail <br>
+					2 - 3 working days <br>
+					0 - 1 KG <br>
+					Max 45 x 35 x 16 cm <br>
+					Price: £3.35
+				</div>
+			</label>
+
+			<label>
+				<input type="radio" name="delivery-option" value="option-2" style="position: absolute; opacity: 0; width: 0; height: 0;">
+				<div class="delivery-info"> 
+					<i class="fa-solid fa-truck"></i>
+					 
+					Royal Mail <br>
+					2 - 3 working days <br>
+					0 - 5 KG <br>
+					Max 61 x 46 x 46 cm <br>
+					Price: £5.35 
+				</div>
+			</label>
+			
+			<label>
+				<input type="radio" name="delivery-option" value="option-3" style="position: absolute; opacity: 0; width: 0; height: 0;">
+				<div class="delivery-info"> 
+					<i class="fa-solid fa-truck"></i>
+					
+					Royal Mail  <br>
+					2 - 3 working days <br>
+					5 - 10 KG <br>
+					Max 61 x 46 x 46 cm <br>
+					Price: £6.95
+				</div>
+			</label>
+		</div>
+		
+		<!-- Free of payed delivery -->
+		<div class="delivery-fee">
+			<input type="radio" name="delivery-fee" id="free-delivery" value="free-delivery" />
+			<label for="free-delivery"> Free delivery </label>
+			
+			<div class="space"> </div>
+			
+			<input type="radio" name="delivery-fee" id="charged-delivery" value="charged-delivery" />
+			<label for="charged-delivery"> Charged delivery </label>
+			
+			<input type = "number" id="delivery-price" placeholder="Enter the delivery price...">
+ 
+		</div>	
+		
+		
+		<br>
+		
+		
+		<input type="radio" name="delivery" id="collection-option" value="collection" />
+		<label style ="font-weight: bold" for="collection-option"> Collection </label>
+		 
+		<input type = "text" id="collection-location" placeholder="Item's location postcode ">
+ 
+	</div>
+  </div>
+  
+  <div class="tab"> 
+  
+	<h1 class="form-header">Bank account details</h1>
+	
+	<div id="seller_account">
+	
+		<input type = "text" id="account-number" placeholder="Account number">
+		
+		<input type = "text" id="account-name" placeholder="Account holder's name">
+		
+	</div>
+	
+  </div>
+  
+  
+  <div class="tab"> 
+  
+	<h1 class="form-header">Preview</h1>
+	
+	 <div class="preview">
+	 
+		
+		<div id="product">
+		
+	    <div id="preview-item-name"></div>
+		
+		<img id="preview-image" src="images/placeholder.png">
+		
+		<br>
+		<br>
+		<br>
+		
+		<div class="price" id="preview-item-price"></div>
+		
+		
+		<div class="rate" id="preview-item-rate">
+			  <i class="fa-solid fa-star unchecked"></i>
+			  <i class="fa-solid fa-star unchecked"></i>
+			  <i class="fa-solid fa-star unchecked"></i>
+			  <i class="fa-solid fa-star unchecked"></i>
+			  <i class="fa-solid fa-star unchecked"></i>
+			  (0)
+	    </div>
+		
+		
+		<div class="condition" id="preview-item-condition"></div>		
+			  
+		<div class="clear"> </div>
+			  
+		<p class="info"> 
+			<div id="preview-item-description"></div>
+		</p>
+		
+		</div>
+	
+     </div>
+	 
+  </div>
+  
+  
+  
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn">Previous</button>
+      <button type="button" id="nextBtn">Next</button>
+    </div>
+  </div>
+  
+</form>
+
+</main>
+
+
+</body>
+
+</html>
+
+
+
