@@ -202,6 +202,7 @@ i {
 	padding:0;
 	align-items: center;
 	justify-content:center;  
+	
 }
 
 
@@ -469,14 +470,6 @@ select option{
 }
 
 
-.price {
-	float:left;
-	font-size: 2em;
-	margin-top: 0;
-	font-weight: bold;
-}
-
-
 #product {
 	padding: 0;
 	width: 95%;
@@ -490,10 +483,25 @@ select option{
 }
 
 
+.price {
+	float:left;
+	font-size: 2em;
+	margin-top: 0;
+	font-weight: bold;
+}
+
+.condition{
+	font-weight: bold;
+	margin-top: 0;
+	font-size: 2em;
+}
+
 .rate {
 	float: right;
 	font-weight: bold;
+	margin-top: .5em;
 }
+
 
 
 
@@ -666,6 +674,8 @@ input[type=submit]:hover{
 	margin-top: 3em;
 	position: relative;
 	padding: .5em;
+	border: .3px solid gray;
+	background: #fff;
 }
 
 
@@ -699,9 +709,7 @@ main{
 }
 
 .productInfo {
-	border: .3px solid gray;
 	padding: .5em;
-	background: #fff;
 	width: 95%;
 	margin: auto;
 }
@@ -714,9 +722,375 @@ main{
 .remove {
 	position: absolute;
 	color: red;
-	top: 3;
-	right: 10;
+	top: 0;
+	right: 0;
 	cursor: pointer;
+}
+
+
+
+
+/********************************************************* The sell page *****************************************/
+#uploadForm {
+  background-color: #ffffff;
+  margin: 3em auto;
+  padding: 0.3em 0 2em 0;
+}
+
+.form-header {
+  text-align: center; 
+  margin-top: 1.5em;  
+  font-size: 1.5em;
+}
+
+.sell-input {
+   margin: 0 auto 2em auto;
+   font-size: 1.3em;
+}
+
+
+
+/************ Using images instead of radio buttons **********/
+
+	/* IMAGE STYLES */
+	[type=radio] + div {
+	  cursor: pointer;
+	}
+	
+	.upload-item-cat {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content:center;  
+	}
+	
+	.sell-books, .sell-electronics, .sell-stationery, .sell-furniture, .sell-accessories, .sell-gardening {
+		 width: 7em;
+		 height: 7em;
+		 font-weight: bold;
+		 z-index: 100;
+		 background-position: cover;
+		 background-size: 100% 100%; 
+		 border-radius: .3em;
+		 margin: 1em;
+		 display: flex; 
+		 align-items:center;
+		 justify-content:center;  
+		 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		 color: #fff;
+	}
+	
+	
+	.sell-books{
+		background-image: url("images/books.jpg");
+	}
+	
+	.sell-electronics{
+		background-image: url("images/electronics.jpg");
+	}
+	
+	
+	.sell-stationery{
+		background-image: url("images/stationery.jpg");
+	}
+	
+	
+	.sell-furniture{
+		background-image: url("images/furniture.jpg");
+	}
+	
+	.sell-accessories{
+		background-image: url("images/placeholder.png");
+	}
+	
+	.sell-gardening{
+		background-image: url("images/gardening.jpg");
+	}
+
+
+.sell-books:hover, .sell-electronics:hover, .sell-stationery:hover, .sell-furniture:hover, .sell-accessories:hover, .sell-gardening:hover:hover {
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+
+.left{
+	float: left;
+	width: 48%;
+	padding:0;
+	text-align: center;
+}
+
+
+.right {
+	float: right;
+	width: 48%;
+	padding:0;
+	text-align: center;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+#prevBtn, #nextBtn {
+  background-color: #40EAE9;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 2em 1em 0 0;
+  border-radius: .3em;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+  background-color: #18767D ;
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #a4f5f4;
+  margin-right: 1em;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 7px;
+  width: 15%;
+  background-color:  #40EAE9 ;
+  border: none;  
+  display: inline-block;
+  opacity: 0.2;
+  margin: -0.1em;
+  padding: 0;
+
+}
+
+
+.step.active {
+  opacity: 1;
+
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #000;
+}
+
+.clear {
+	clear: both;
+}
+
+
+#item-name, #item-description, #item-price, #card-number, #card-name, #account-name, #security-code, #expiry-date, #town_city, #postcode, 
+#address {
+	border: solid 1px #000;
+	font-size: 1em;
+	margin: 1em auto 1em auto;
+	padding: .5em;
+	border-radius: .4em;
+	width: 80%;
+}
+
+
+#item-condition {
+	font-size: 1em;
+	border: solid 1px #000;
+	width: 80%;
+	margin: 1em auto 1em auto;
+	background: none;
+	border-radius: .4em;
+}
+
+/********************* Uploading an item's image ******************/
+.image-upload {
+	font-size: 1em;
+	margin: 1em 1.5em 2em auto;
+	padding: .5em;
+	border-radius: .4em;
+	text-align: center;
+	border: solid 1px #000;
+}
+
+
+#item-image{
+	width: 7em;
+	margin: auto;
+	height: 7em;
+	display: none;
+}
+
+
+.upload-btn {
+	text-align: center;
+	padding: .3em;
+	font-size: 1em;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 2em;
+}
+
+.remove-image {
+  margin: .5em auto;
+  color: #fff;
+  background: #E22F32;
+  border: none;
+  padding: .5em;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all .2s ease;
+  outline: none;
+  font-weight: 700;
+  display: none;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+
+.delivery-collection{
+	width: 95%;
+	margin: auto;
+	font-size: 1.5em;
+}
+
+
+.delivery-info{
+		font-size: .6em;
+		width: 100%;
+		font-weight: bold;
+		border-radius: .3em;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		padding: .3em;
+}
+
+
+.delivery-fee {
+	width: 90%;
+	margin: 1em auto 2em auto;
+	display: none;
+}
+
+
+#collection-location{
+	display: none;
+	border: solid 1px #000;
+	margin: 1em 0 0 1em;
+	padding: .5em;
+	border-radius: .4em;
+}
+
+
+#collection-option {
+	margin-top: 2em;
+}
+
+.space{
+	height: 1em;
+}
+
+
+.delivery-options{
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 1em auto 1em auto;
+	display: none;
+}
+
+
+.delivery-options label {
+	width: 40%;
+	margin: 1em auto;
+}
+
+
+.delivery-info:hover {
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+
+#delivery-price {
+	display: none;
+	border: solid 1px #000;
+	margin: 1em 0 0 1em;
+	padding: .5em;
+	border-radius: .4em;
+	
+}
+
+.fa-truck {
+	margin: 0 .5em 0 .5em;
+}
+
+
+#preview-item-description {
+	font-size: 1.5em;
+}
+
+#preview-item-name{
+	margin-bottom: 1em;
+	font-size: 2em;
+}
+
+
+#preview-item-price, #preview-item-condition{
+	font-size: 1em;
+}
+
+#preview-item-rate i {
+	font-size: 1em;
+	margin-top: 0;
+}
+
+#preview-item-rate {
+	margin-top: 0;
+}
+
+
+/******************************************** Checkout page ******************************/
+#card-payment , #paypal-payment {
+	 margin: 1em;
+}
+
+
+.payment-method{
+	text-align: left;
+	width: 80%;
+	margin: 3em auto 0 auto;
+	font-size: 1.5em;
+}
+
+
+.payment_details {
+	padding-left: 2em;
+}
+
+
+#security-code, #expiry-date, #town_city, #postcode {
+	width: 48%;
+}
+
+
+#seller_account{
+	text-align: center;
+	width: 80%;
+	margin: auto;
 }
 
 
@@ -853,7 +1227,65 @@ main{
 	.review-text{
 		font-size: 1em;
 	}
+	
+	#uploadForm {
+		width: 50%;
+		height: auto;
+		margin: 5em auto;
+	}
+	
+	.step{
+		width: 10%;
+	}
+	
+	.left, .right{
+		width: 45%;
+	}
+	
+	.form-header {
+	  font-size: 2em;
+	}
 
+	.sell-input {
+	   font-size: 1.5em;
+	   width: 90%;
+	}
+	
+	#prevBtn, #nextBtn {
+		margin-right: 2em;
+	}
+	
+	.delivery-options label {
+		width: 25%;
+	}	
+	
+	#preview-item-price, #preview-item-condition{
+		font-size: 1.5em;
+	}
+
+	#preview-item-rate i {
+		font-size: 1.5em;
+	}
+	
+	.left_part {
+		float: left;
+		width: 48%;
+		text-align: center;
+	}
+
+	.right_part {
+		float: right;
+		width: 48%;
+		text-align: center;
+	}
+	
+	.payment_details {
+		padding-left: 0;
+	}
+	
+	#seller_account{
+		width: 60%;
+	}
 }
 
 
