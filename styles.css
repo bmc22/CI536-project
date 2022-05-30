@@ -466,7 +466,7 @@ select option{
 .product-name {
 	font-size: 2em;
 	text-align: center;
-	margin-top: 1em;
+	margin-top: 3em;
 }
 
 
@@ -1094,7 +1094,9 @@ main{
 	margin: auto;
 }
 
-
+.items{
+	margin-top: -3em; 
+}
 
 /****************************************** Media queries **********************************/
 
