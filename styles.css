@@ -620,18 +620,18 @@ input[type=number] {
 
 /************************************** submit buttons ************************************/
 
-input[type=submit]{
+#apply{
 	background-color: #40EAE9;
 	color: #fff;
 	border: none;
 	font-size: 1.4em;
 	border-radius: .3em;
-	padding: .4em;
+	padding: .2em .3em .3em .3em;
     text-align: center;
 	margin: 1em .5em .5em .5em;
 }
 
-input[type=submit]:hover{
+#apply:hover{
 	background-color: #18767D ;
 	color: #fff;
 }
