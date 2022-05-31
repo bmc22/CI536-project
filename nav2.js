@@ -1,6 +1,6 @@
 
 var nav2;
-var index = 0;
+
 
 
 window.addEventListener("load", function() {
@@ -13,25 +13,40 @@ window.addEventListener("load", function() {
 		
 		let navPages = [...new Set(localStorage.getItem("previous_pages").split(" "))];
 		
+		var prv_pages = [];
+		
 		for(let i =0; i < navPages.length ; i++){
 			
+			prv_pages[i] = navPages[i];
+			
 			// ****************** if the current page is in the list stop iterating
-			if((navPages[i] + ".html") == page) return;
+			if((navPages[i] + ".html") == page) {
+				localStorage.setItem("previous_pages", prv_pages.join(" "));
+				return; //set local storage to navpages now
+			}
+			
+			
 			
 			var a = document.createElement("a");
-			page_name= (navPages[i] == "Home")? "index":navPages[i]
-			a.setAttribute("href", page_name + ".html");
-			a.setAttribute("id", "previous_page");
-			a.textContent = navPages[i];
+			page_name = (navPages[i] == "Home")? "index":navPages[i]
 			
-			document.querySelector("#nav2").appendChild(a);
+			if(page_name != "product"){
+				a.setAttribute("href", page_name + ".html");
+				a.setAttribute("id", "previous_page");
+				a.textContent = navPages[i];
 			
-			var arrow = document.createElement("span");
-			arrow.textContent= "  \u21D2  " ;
-			
-			document.querySelector("#nav2").appendChild(arrow);
+				document.querySelector("#nav2").appendChild(a);
+				
+				var arrow = document.createElement("span");
+				arrow.textContent= "  \u21D2  " ;
+				
+				document.querySelector("#nav2").appendChild(arrow);
+			}
 			
 		}
+		
+		//remove the last arrow in the navigations links on the product page
+		if(page == "product.html") document.querySelector("#nav2").removeChild(document.querySelector("#nav2").lastChild);
 	}
 	
 	
