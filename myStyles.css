@@ -1,0 +1,487 @@
+html{
+	scroll-behavior: smooth;
+}
+
+#header{
+    
+    display: block;
+}
+
+
+.nav2 {
+	font-size: 1.5em;
+}
+
+#logo{
+    width: 15%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home-logo{
+    width: 30px;
+    padding-left: 10px;
+    
+}
+
+#content{
+    /*border: palevioletred solid 2px;*/
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+#log-in-btn, #sign-up-btn2,
+#past-order-btn, #current-order-btn2{
+    margin-left: 0%;
+    border-bottom: black solid 2px;
+    font-weight: bold;
+}
+
+#sign-up-btn, #log-in-btn2,
+#current-order-btn, #past-order-btn2{
+    border-bottom: black solid 1px;
+    font-weight: normal;
+}
+
+#sign-up-btn:hover{
+    background-color: aliceblue;
+}
+
+#current-order-btn:hover{
+    background-color: aliceblue;
+}
+
+#log-in-btn2:hover{
+    background-color: aliceblue;
+}
+
+#past-order-btn2:hover{
+    background-color: aliceblue;
+}
+
+/*
+#container{
+    
+    padding: 15px;
+    width: 95%;
+    margin-left: 0%;
+}
+
+*/
+
+
+
+#sign-up, #current{
+    /*border: blue solid 1px;*/
+    display: none;
+}
+
+
+.fa-angle-down{
+	margin-top: 0;
+}
+
+
+#log-in input, #sign-up input{
+    border: solid #40EAE9 1px;
+
+}
+
+#submit, #submit2{
+    background-color: #40EAE9;
+    border: none;
+    transition: .3s background-color;
+	margin-top: 1.5em;
+	padding: 0;
+	border-radius: .3em;
+}
+
+#submit:hover, #submit2:hover{
+    background-color: #18767D ;
+	color: #fff;
+}
+
+#forgot-password{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.itmTile{
+    border-bottom: black solid 1px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.section1{
+    display: inline-block;
+    width: 20%;
+    min-height: 130px;
+    float: left;
+	margin: auto;
+}
+
+
+
+.itemImg{
+    width: 90%;
+    height: 120px;
+}
+
+.section2{
+    width: 41%;
+    display: inline-block;
+    min-height: 130px;
+    margin: auto;
+}
+
+.section3{
+    display: inline-block;
+    width: 35%;
+    min-height: 130px;
+    float: right;
+	margin: auto;
+}
+
+#past, #current{
+    padding-bottom: 100px;
+}
+
+
+
+.sales-itmTile{
+    border-bottom: black solid 1px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    height: fit-content;
+    overflow: hidden;
+	text-align: center;
+}
+
+.sales-section1{
+    display: inline-block;
+    width: 35%;
+    min-height: 130px;
+    float: left;
+	position: relative;
+}
+
+
+
+.sales-itemImg{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.sales-section2{
+	width: 50%;
+    display: inline-block;
+    margin-top: 0;
+	padding: 0 .5em;
+}
+
+.sales-btn{
+    width: 70%;
+    height: 2.5em;
+    background-color: #40EAE9;
+    border-radius: 25px;
+    border: none;
+    transition: .3s background-color;
+	margin: 0.5em 14%;
+}
+
+.sales-btn:hover{
+    background-color: #18767D ;
+	color: #fff;
+}
+
+
+
+.b1, .b2, .b3, #about-btn, #update-pass, #update-address, #update-contact{
+    width: 100%;
+    border: none;
+    border-radius: .3em;
+    background-color: #40EAE9;
+    font-size: 1em;
+    margin-bottom: 1em;
+    transition: .3s background-color;
+}
+
+.b1, .b2, .b3 {
+	padding: .3em 0;
+}
+
+
+#about-btn, #update-pass, #update-address, #update-contact{
+	height: 2em;
+}
+
+.b1:hover, .b2:hover, .b3:hover, #about-btn:hover, #update-pass:hover, #update-address:hover, #update-contact:hover{
+    background-color: #18767D ;
+	color: #fff;
+}
+
+.panel{
+    border: solid black 1px;
+    border-radius: 10px;
+    height: fit-content;
+    overflow: hidden;
+	transition: 0.5s;
+	padding: 1.2em .5em .3em .5em;
+	width: 80%;
+	margin: 15px auto;
+}
+
+.header-btn{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: none;
+	padding: 0 1em 1em 1em;
+}
+
+h2{
+	text-align: center;
+	margin: 3em auto 2em auto;
+}
+
+
+h4 {
+	margin-top: 2em;
+}
+
+.header-btn h3{
+    display: inline;
+}
+
+.header-btn i{
+    float: right;
+}
+
+.labels {
+    width: 30%;
+    min-height: 130px;
+    float: left;
+	margin-left: 1.5em;
+}
+
+.labels b {
+    font-size: 1em;
+}
+
+.info{
+    display: inline-block;
+    width: 59%;
+    min-height: 130px;
+    float: right;
+}
+
+
+
+.panel-cont{
+    display: none;
+
+}
+
+#usrProfile{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 100%;
+    border: solid black 1px;
+}
+
+.panel textarea{
+    border: solid #40EAE9 1px;
+    border-radius: 1em;
+    width: 90%;
+    height: 80px;
+    resize: none;
+}
+
+#update-pass-frm label , #update-address-frm label, #update-contact-frm label{
+    display: inline-block;
+    width: 50%;
+	font-weight: bold;
+}
+
+#update-pass-frm input[type="password"], #update-address-frm input[type="text"], #update-contact-frm input[type="text"], 
+#update-contact-frm input[type="email"] {
+    display: inline-block;
+    width: 75%;
+    border: solid #40EAE9 1px;
+	margin-bottom: 2em;
+	height: 2em;
+}
+
+
+#update-pass-frm span{
+    color: red;
+    display: none;
+}
+
+
+#update-pass-frm, #update-address-frm, #update-contact-frm {
+	padding: 3em 0 0 0;
+	text-align: center;
+}
+
+
+input[type="submit"]{
+	cursor: pointer;
+}
+
+/************************************* Log in/Sign up Page ***********************************/
+
+#log-in, #sign-up {
+	text-align: center;
+	width: 100%;
+}
+	
+
+#log-in input, #sign-up input{ 
+	width: 80%;
+	border-radius: .3em;
+	height: 2.5em;
+	margin: 1em;
+}
+
+
+#log-in-btn, #sign-up-btn, #log-in-btn2, #sign-up-btn2, 
+#past-order-btn, #current-order-btn, #past-order-btn2, #current-order-btn2 {
+	width: 40%;
+	display: inline-block;
+	text-align: center;
+	padding: .5em .5em 0 .5em;
+	height: 2em; 
+	cursor: pointer;
+	margin-bottom: 2em;
+}
+
+
+#past-order-btn, #current-order-btn, #past-order-btn2, #current-order-btn2 {
+	width: 45%;
+	margin: auto;
+}
+
+#buttons {
+	text-align: center;
+}
+
+/******************************* Account page ******************************/
+
+#account-content, #orders-content, #inventory-content, #sales-content{
+	width: 95%;
+	margin: auto;
+}
+
+
+
+
+@media screen and (min-width: 50em){
+	
+    #log-in input, #sign-up input{ 
+		width: 70%;
+	}
+
+
+	#log-in-btn, #sign-up-btn, #log-in-btn2, #sign-up-btn2 { 
+		width: 35%;
+	}
+	
+	#update-pass-frm input[type="password"], #update-address-frm input[type="text"], #update-contact-frm input[type="text"], 
+	#update-contact-frm input[type="email"] {
+		width: 50%;
+	}
+	
+	
+	#content{
+		width: 30%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#account-content{
+		width: 50%;
+	}
+	
+	#orders-content, #inventory-content, #sales-content{
+		width: 65%;
+	}
+	
+	#update-pass-frm label, #update-address-frm label, #update-contact-frm label {
+		width: 30%;
+	}
+	
+	.section1{
+		width: 32%;
+	}
+	
+	.section2{
+		width: 42%;
+	}
+	
+	.section3{
+		width: 24%; 
+	}
+	
+	.sales-itemImg{
+		margin-top: 1em;
+		max-height: 10em;
+	}
+	
+	.sales-btn{
+		width: 40%;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 25em){
+	 
+	.section2{
+		text-align: center;
+	}
+	
+	.section3{
+		width: 35%; 
+	}
+	
+	#past-order-btn, #current-order-btn, #past-order-btn2, #current-order-btn2 {
+		width: 48%;
+		margin: auto;
+		padding: 0
+	}
+	
+	
+}
+
+
+
+@media screen and (min-width: 60em){
+	
+	#orders-content, #inventory-content, #sales-content{
+		width: 50%;
+	}
+		
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE >
+
+<html lang="en"> 
+
+<head>
+<meta charset="utf-8"/>
+
+<meta name="viewport" content="width= device-width, initial-scale=1"/>
+
+<title> Order History </title>
+
+<script src="account.js"></script>
+<script src="nav2.js"></script>
+
+<script src="https://kit.fontawesome.com/8a181a8ab1.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="styles2.css">
+<link rel="stylesheet" href="myStyles.css">
+ 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<header> 
+
+		<div class="nav">
+		
+			<div class="logo">
+				<a href="index.html"> Home </a>
+			</div>
+			
+			
+			
+			
+			<div class="menu">
+				<ul>
+					<li class="sell">
+						<a href= "sell.html"> Sell </a>
+					</li>
+		
+					<li class="basket">
+						<i class="fa-solid fa-basket-shopping"></i>
+						<span id='cartCount'> 2 </span>
+					</li>
+		
+					<li class="profile">
+						<img src="images/profile.png" />
+						
+						<div class="account-menu">
+							<a href="Account.html">Account </a>
+							<a href="OrderHistory.html"> Orders  </a>
+							<a href="Inventory.html"> Inventory </a>
+							<a href="SoldItems.html"> Sales </a>
+							<a href="SignIn.html"> Log out </a>
+						</div>
+					
+					</li>
+					
+				</ul>
+			</div>
+			
+			
+			<div class="clear1"> </div>
+			
+			<div class="search">
+
+				<input type="text" class="search-input" placeholder= "search an item" > 
+				<button type="submit" class="search-button">
+				<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+				
+			</div>
+			
+			<div class="clear2"> </div>
+			
+			
+		</div>
+		
+	</header>
+	
+	<main>
+	
+	<p class = "nav2"> 
+		 <span id = "nav2">  </span> OrderHistory
+	</p>
+
+
+        <div id="orders-content">
+            <h2>Order History</h2>
+            
+            <div id="past">
+			    <div id= "buttons">
+					<div id="past-order-btn"> Past Orders </div>
+					<div id="current-order-btn"> Current Orders </div>
+				</div>
+				
+                <div class="itmTile">
+                    <div class="section1"> <img class="itemImg" src="images/placeholder.png"> </div>
+                    
+                    <div class="section2">
+                        <h4>---------Product Name -------</h4>
+                        <p><em>Date Recieved: 01/01/2020</em></p>
+                    </div>
+                    
+                    <div class="section3">
+                        <button class="b1">Return product</button>
+                        <button class="b2">Buy again</button>
+                        <button class="b3">Write review</button>
+                    </div>
+                </div>
+
+                <div class="itmTile">
+                    <div class="section1"> <img class="itemImg" src="images/placeholder.png"> </div>
+                    
+                    <div class="section2">
+                        <h4>---------Product Name -------</h4>
+                        <p><em>Date Recieved: 01/01/2020</em></p>
+                    </div>
+                    
+                    <div class="section3">
+                        <button class="b1">Return product</button>
+                        <button class="b2">Buy again</button>
+                        <button class="b3">Write review</button>
+                    </div>
+                </div>
+
+                <div class="itmTile">
+                    <div class="section1"> <img class="itemImg" src="images/placeholder.png"> </div>
+                    
+                    <div class="section2">
+                        <h4>---------Product Name -------</h4>
+                        <p><em>Date Recieved: 01/01/2020</em></p>
+                    </div>
+                    
+                    <div class="section3">
+                        <button class="b1">Return product</button>
+                        <button class="b2">Buy again</button>
+                        <button class="b3">Write review</button>
+                    </div>
+                </div>
+
+                <div class="itmTile">
+                    <div class="section1"> <img class="itemImg" src="images/placeholder.png"> </div>
+                    
+                    <div class="section2">
+                        <h4>---------Product Name -------</h4>
+                        <p><em>Date Recieved: 01/01/2020</em></p>
+                    </div>
+                    
+                    <div class="section3">
+                        <button class="b1">Return product</button>
+                        <button class="b2">Buy again</button>
+                        <button class="b3">Write review</button>
+                    </div>
+                </div>
+
+            </div>
+            <div id="current">
+				<div id= "buttons">
+					<div id="past-order-btn2"> Past Orders </div>
+					<div id="current-order-btn2"> Current Orders </div>
+				</div>
+				
+                <div class="itmTile">
+                    <div class="section1"> <img class="itemImg" src="images/placeholder.png"> </div>
+                    
+                    <div class="section2">
+                        <h4>---------Product Name -------</h4>
+                        <p><em>Date arriving: 01/01/2020</em></p>
+                    </div>
+                    
+                    <div class="section3">
+                        <button class="b1">Cancel order</button>
+                        <button class="b2">Track order</button>
+                        <button class="b3">View product</button>
+                    </div>
+                </div>
+
+                <div class="itmTile">
+                    <div class="section1"> <img class="itemImg" src="images/placeholder.png"> </div>
+                    
+                    <div class="section2">
+                        <h4>---------Product Name -------</h4>
+                        <p><em>Date arriving: 01/01/2020</em></p>
+                    </div>
+                    
+                    <div class="section3">
+                        <button class="b1">Cancel order</button>
+                        <button class="b2">Track order</button>
+                        <button class="b3">View product</button>
+                    </div>
+                </div>
+
+                <div class="itmTile">
+                    <div class="section1"> <img class="itemImg" src="images/placeholder.png"> </div>
+                    
+                    <div class="section2">
+                        <h4>---------Product Name -------</h4>
+                        <p><em>Date arriving: 01/01/2020</em></p>
+                    </div>
+                    
+                    <div class="section3">
+                        <button class="b1">Cancel order</button>
+                        <button class="b2">Track order</button>
+                        <button class="b3">View product</button>
+                    </div>
+                </div>
+
+                <div class="itmTile">
+                    <div class="section1"> <img class="itemImg" src="images/placeholder.png"> </div>
+                    
+                    <div class="section2">
+                        <h4>---------Product Name -------</h4>
+                        <p><em>Date arriving: 01/01/2020</em></p>
+                    </div>
+                    
+                    <div class="section3">
+                        <button class="b1">Cancel order</button>
+                        <button class="b2">Track order</button>
+                        <button class="b3">View product</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+		
+		</main>
+
+    </body>
+</html>

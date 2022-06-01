@@ -8,7 +8,7 @@ window.addEventListener("load", function(){
 	//******************************** updating the quantities of the products in the basket *********************************		
 		
 	
-	for (var i = 1 ; i < 4 ; i ++)
+	for (var i = 1 ; i < 3 ; i ++)
 	
 	{   productNum = "product" + i.toString();
 		   

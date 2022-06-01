@@ -5,6 +5,8 @@ var nav2;
 
 window.addEventListener("load", function() {
 	
+	
+	
 	var url = window.location.href.split("/");
 	
 	var page = url[url.length -1];
@@ -64,4 +66,20 @@ window.addEventListener("load", function() {
 	else {
 		localStorage.setItem('previous_pages', localStorage.getItem("previous_pages") + " " + nav2);
 	}
+	
+	/************************* Clicking the profile icon ************************************/
+	document.querySelector(".profile").addEventListener("click", function(){
+		document.querySelector(".account-menu").style.display = "block";
+	})
+	
+	
+	
 })
+
+
+
+
+window.addEventListener("scroll", function() {
+	document.querySelector(".account-menu").style.display= "none";
+})
+	
