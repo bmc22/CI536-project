@@ -204,7 +204,8 @@ html{
     border-radius: 25px;
     border: none;
     transition: .3s background-color;
-	margin: 0.5em 14%;
+    margin: 0.5em 14%;
+    color: #000;
 }
 
 .sales-btn:hover{
